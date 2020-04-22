@@ -1,0 +1,25 @@
+body {
+    background-color: white;
+}
+.container {
+    padding-top: 10px;
+}
+.row {
+    padding-top: 10px;
+}
+
+#about {
+    height: 500px;
+    overflow: scroll;
+
+}
+
+.card-header {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+#col-info {
+    background-color: black;
+    color: white;
+    column-span: all;
+}
