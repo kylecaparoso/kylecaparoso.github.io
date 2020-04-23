@@ -1,5 +1,6 @@
 body {
     background-color: white;
+    scrollbar-color: black;
 }
 .container {
     padding-top: 10px;
@@ -10,8 +11,7 @@ body {
 
 #about {
     height: 500px;
-    overflow: scroll;
-
+    overflow-y: scroll;
 }
 
 .card-header {
@@ -22,4 +22,23 @@ body {
     background-color: black;
     color: white;
     column-span: all;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+  
+/* Track */
+::-webkit-scrollbar-track {
+    background: black; 
+}
+   
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+}
+  
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
 }
