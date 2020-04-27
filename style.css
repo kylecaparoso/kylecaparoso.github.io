@@ -8,6 +8,7 @@
     body {
         background-color: black;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        overflow: hidden;
     }
     
     /* MAIN -- */
@@ -16,7 +17,6 @@
         height: 100vh;
         display: grid;
         grid-template-columns: 30% 7% 63%;
-        justify-content: center;
     }
 
     /* LEFT-BOX -- */
@@ -123,6 +123,7 @@
         background-color: black;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         font-size: 16px;
+        overflow: hidden;
     }
 
     /* MAIN -- */
@@ -166,8 +167,8 @@
         position: absolute;
         border-radius: 50%;
         object-fit: cover;
-        width: auto;
-        height: 90%;
+        width: 40vw;
+        height: auto;
     }
 
     .info-text {
