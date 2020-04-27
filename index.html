@@ -1,113 +1,39 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css">
     </head>
-
     <body>
-        <div class="container">
-            <div class="row align-items-center">
-              <div class="col-md-4">
-                <div class="card">
-                    <img src="images/KC_1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <blockquote class="blockquote">
-                            <p class="mb-0">Kyle Caparoso</p>
-                            <footer class="blockquote-footer">Software Engineer</footer>
-                        </blockquote>
+        <div class="main">
+            <!--LEFT-BOX-->
+            <div class="left-box">
+                <div class="info-box">
+                    <div class="info-pic">
+                        <img src="images/KC_1.jpg" class="main-pic" alt="...">
+                    </div>
+                    <div class="info-text">
+                        <p class="text-name"><strong>Kyle Caparoso</strong></p>
+                        <p class="text-title">- Software Engineer</p>
+
                         <a href="#"><img src="images/social/Circled_Instagram_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
                         <a href="#"><img src="images/social/Circled_Linkedin_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
                         <a href="#"><img src="images/social/Circled_Twitter_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
                     </div>
                 </div>
-              </div>
-              <div class="col-md-8" id="about">
-                <div class="card">
-                    <div class="card-header">About Me</div>
-                    <div class="card-body">
-                      <div class="row">
-                          <div class="col-sm-6">
-                              <p class="lead">Oh Hi There!</p>
-                              <p class="lead"><strong>I'm Kyle Caparoso.</strong></p>
-                              <p>A software engineer, avid Minecrafter, fitness fanatic, home DIYer, animal lover, WWE fan</p>
-                              <small class="text-muted">...too many titles to mention!</small>
-                          </div>
-                          <div class="col-sm-6" id="col-info">
-                              <div class="row">
-                                  <div class="col">Age:</div>
-                                  <div class="col">28</div>
-                              </div>
-                              <div class="row">
-                                  <div class="col">Residence:</div>
-                                  <div class="col">Edinburgh, Scotland</div>
-                              </div>
-                              <div class="row">
-                                  <div class="col">Nationality:</div>
-                                  <div class="col">British</div>
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Skills</div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-center"><img src="images/icons/braces.svg" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></p>
-                                <p class="text-center"><strong>Software Development</strong></p>
-                                <p class="text-center">Experienced in C, C++, Python, Linux</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center"><img src="images/icons/display-fill.svg" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></p>
-                                <p class="text-center"><strong>Embedded Systems</strong></p>
-                                <p class="text-center">Microprocessors, Microcontrollers, Embedded Linux, Embedded Android</p>
-                            </div>
-                            <div class="w-100"></div>
-                            <div class="col">
-                                <p class="text-center"><img src="images/icons/battery-charging.svg" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></p>
-                                <p class="text-center"><strong>Electronics</strong></p>
-                                <p class="text-center">Prototyping, Soldering, PCB Layout</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center"><img src="images/icons/window.svg" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></p>
-                                <p class="text-center"><strong>Web Development</strong></p>
-                                <p class="text-center">Front-End and Back-End</p>
-                            </div>
-                          </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Fun Facts</div>
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col">
-                                <p class="text-center"><img src="images/icons/geo-alt.svg" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></p>
-                                <p class="text-center">10 Countries Visited</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center"><img src="images/icons/chat-dots-fill.svg" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></p>
-                                <p class="text-center">Speaks 2 Languages</p>
-                            </div>
-                            <div class="col">
-                                <p class="text-center"><img src="images/social/Star_Trek_alt-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></p>
-                                <p class="text-center">Star Trek Fan</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+            </div>
+            <!--/LEFT-BOX-->
+            <div id="mySidenav" class="sidenav">
+                <a href="#" class="active" id="about">About</a>
+                <a href="#" id="cv">CV</a>
+                <a href="#" id="projects">Projects</a>
+                <a href="#" id="blog">Blog</a>
+                <a href="#" id="contact">Contact</a>
+            </div>
 
-              </div>
+            <div class="right-box">
+                <div id="typedtext"></div>
             </div>
         </div>
-
-        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
     </body>
-
-    <footer>
-        
-    </footer>
 </html>
