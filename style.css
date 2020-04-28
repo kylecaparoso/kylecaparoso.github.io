@@ -3,24 +3,30 @@
 // for Desktops 
 //
 */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 567px) {
     /* BODY -- */
     body {
         background-color: black;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 1em;
         overflow: hidden;
     }
     
     /* MAIN -- */
     .main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         width: 100vw;
         height: 100vh;
         display: grid;
-        grid-template-columns: 30% 7% 63%;
+        grid-template-columns: 30% 10% 60%;
     }
 
     /* LEFT-BOX -- */
     .left-box {
+        margin: 0;
         background: whitesmoke;
         width: 100%;
         height: 100vh;
@@ -45,14 +51,6 @@
         object-fit: cover;
         width: 100%;
         height: auto;
-    }
-
-    .info-box p.text-name {
-        font-size: 25px;
-    }
-
-    .info-box p.text-title {
-        font-size: 15px;
     }
 
     /* NAVBAR --*/
@@ -94,18 +92,13 @@
         height: 100vh;
         font-family: 'Courier New', Courier, monospace;
         color: white;
-        font-size: 30px;
-
+        font-size: 1.5em;
         position: relative;
     }
 
     #typedtext {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-
+        padding: 1%;
+        text-align: center;
     }
 
 
@@ -116,23 +109,28 @@
 // for mobile phones and tablets
 //
 */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 567px) {
 
     /* BODY -- */
     body {
         background-color: black;
         font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        font-size: 16px;
+        font-size: 1em;
         overflow: hidden;
     }
 
     /* MAIN -- */
     .main {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
         background: black;
         width: 100vw;
         height: 100vh;
         display: grid;
-        grid-template-rows: 30% 7% 63%;
+        grid-template-rows: 25% 10% 75%;
+
     }  
 
     /* LEFT-BOX -- */
@@ -207,15 +205,17 @@
 
     /* RIGHT-BOX -- */
     .right-box {
-        padding: 15px 10px 10px 10px;
+        padding: 1%;
         background: black;
         width: 100vw;
         height: 100%;
         font-family: 'Courier New', Courier, monospace;
         color: white;
+        font-size: 1.1em;
     }
 
     #typedtext {
+        padding: 1%;
         text-align: center;
     }
 }
