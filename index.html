@@ -13,25 +13,120 @@
                     </div>
                     <div class="info-text">
                         <p class="text-name"><strong>Kyle Caparoso</strong></p>
-                        <p class="text-title">- Software Engineer</p>
 
-                        <a href="#"><img src="images/social/Circled_Instagram_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
-                        <a href="#"><img src="images/social/Circled_Linkedin_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
-                        <a href="#"><img src="images/social/Circled_Twitter_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
+                        <a href="https://www.instagram.com/ckylec4"><img src="images/social/Circled_Instagram_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
+                        <a href="https://www.linkedin.com/in/kyle-caparoso/"s><img src="images/social/Circled_Linkedin_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
+                        <a href="https://www.twitter.com/kylecprs"><img src="images/social/Circled_Twitter_svg-128.png" width="32px" height="32px" class="rounded" id="img-icons" alt="..."></a>
                     </div>
                 </div>
             </div>
             <!--/LEFT-BOX-->
             <div id="mySidenav" class="sidenav">
-                <a href="#" class="active" id="about">About</a>
-                <a href="#" id="cv">CV</a>
-                <a href="#" id="projects">Projects</a>
-                <a href="#" id="blog">Blog</a>
-                <a href="#" id="contact">Contact</a>
+                <a href="" class="active">Home</a>
+                <!--<a href="{% url 'blog" {% if "/blog/" in request.path %}class="active"{% endif %}>Blog</a>-->
+                <!--<a href="{% url 'contact" {% if "/contact/" in request.path %}class="active"{% endif %}>Contact</a>-->
             </div>
 
             <div class="right-box">
-                <div id="typedtext"></div>
+                <div class="box-page">
+                    <div id="typedtext"></div>
+                    <div class="about-buttons" id="buttons">
+                        <a href="#skills" id="b1" class="button">SKILLS</a>
+                        <a href="#experience" id="b2" class="button">BACKGROUND</a>
+                      </div>
+                </div>
+                
+                <div content="content-box">
+                    <div class="skills-box">
+                        <div class="skills-box-outer">
+                            <h3 id="skills"><span class="text-h3">SKILLS</span></h3>
+                            <h4>I can...</h4>
+                        </div>
+                
+                        <div class="skills-box-inner">
+                            <div class="tab">
+                                <button class="tablinks" onmouseover="openSkills(event, 'sk1')">speak machine.</button>
+                                <button class="tablinks" onmouseover="openSkills(event, 'sk2')">control machines.</button>
+                                <button class="tablinks" onmouseover="openSkills(event, 'sk3')">create circuits.</button>
+                                <button class="tablinks" onmouseover="openSkills(event, 'sk4')">create websites.</button>
+                              </div>
+                              
+                              <div id="sk1" class="tabcontent">
+                                <h3>Software Development</h3>
+                                <p>7 years of experience in developing software with C, C++, Python.</p>
+                              </div>
+                              
+                              <div id="sk2" class="tabcontent">
+                                <h3>Embedded Systems</h3>
+                                <p>Extensive experience with Microcontrollers, Microprocessors, Embedded Linux, Embedded Android, RTOS systems.</p>
+                                <p><strong>Technologies:</strong> PIC, STM32, IMX Processors</p>
+                                <p><strong>Protocols:</strong> SPI, I2C, UART, TCP, UDP, USB</p>
+                              </div>
+                              
+                              <div id="sk3" class="tabcontent">
+                                <h3>Electronics</h3>
+                                <p>Prototyping, Soldering, PCB layout</p>
+                              </div>
+                              <div id="sk4" class="tabcontent">
+                                <h3>Web Development</h3>
+                                <p>Developing websites from back-end to front-end</p>
+                                <p><strong>Back-End:</strong> Django, LAMP</p>
+                                <p><strong>Front-End:</strong> HTML, CSS, Javascript</p>
+                              </div>
+                        </div>
+                    </div>
+                    <h3 id="experience"><span class="text-h3">BACKGROUND</span></h3>
+                    <div class="experience-box">
+                        <h4>Education</h4>
+                        <div class="content">
+                            <h2 style="text-align: left;">Heriot-Watt University, Edinburgh<span style="float: right;">2009 - 2013</span></h2>
+                            <p><strong>BEng (Honours) Electrical and Electronic Engineering</strong></p>
+                        </div>
+                        <h4>Experience</h4>
+                        <div class="timeline">
+                            <div class="container left">
+                            <div class="content">
+                                <h2>JUL 2013</h2>
+                                <p class="text-jobtitle"><strong>Graduate Design Engineer</strong></p>
+                                <p class="text-jobplace"><strong>ScotSat Limited</strong></p>
+                                <p>Worked on the R&D of marine satellite dish antennas and phased array antennas.</p>
+                            </div>
+                            </div>
+                            <div class="container right">
+                            <div class="content">
+                                <h2>AUG 2014</h2>
+                                <p class="text-jobtitle"><strong>Junior Electronics Engineer</strong></p>
+                                <p class="text-jobplace"><strong>Pelamis Wave Power</strong></p>
+                                <p>Part of the Electronics team.</p>
+                            </div>
+                            </div>
+                            <div class="container left">
+                            <div class="content">
+                                <h2>JAN 2015</h2>
+                                <p class="text-jobtitle"><strong>Electronics Engineer</strong></p>
+                                <p class="text-jobplace"><strong>NERC GEF, University of Edinburgh</strong></p>
+                                <p>Involved in the maintenance, testing and deployment of GNSS, Laser Scanners, LIDAR equipments for field research.</p>
+                            </div>
+                            </div>
+                            <div class="container right">
+                            <div class="content">
+                                <h2>AUG 2016</h2>
+                                <p class="text-jobtitle"><strong>Software Engineer</strong></p>
+                                <p class="text-jobplace"><strong>Peacock Technology Limited</strong></p>
+                                <p>Part of the design software engineering team, working on full lifecycles on a variety of projects.</p>
+                            </div>
+                            </div>
+                            <div class="container left">
+                            <div class="content">
+                                <h2>JUL 2019</h2>
+                                <p class="text-jobtitle"><strong>Senior Software Engineer</strong></p>
+                                <p class="text-jobplace">Leonardo UK</strong></p>
+                                <p>Working as part of the Typhoon Programme team.</p>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="index.js"></script>
